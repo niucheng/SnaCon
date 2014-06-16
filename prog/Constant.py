@@ -11,7 +11,7 @@ PS1 = '> '
 cli_help = """        COMMAND     DESCRIPTION
         ==============================
         CREDITS     Show the staff
-        EXIT        Quit this programe
+        EXIT        Quit this program
         HELP        Display this page"""
 cli_credits = """        Hi there!"""
 
