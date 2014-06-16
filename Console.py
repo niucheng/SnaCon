@@ -1,34 +1,26 @@
 #!/bin/env python
 # coding: utf-8
 
-# http://stackoverflow.com/questions/7468668/python-subprocess-readlines
-
 import os
 import subprocess
 import sys
 
-print ('Type "help", "credits" for more information.')
+import prog.Constant as constant
+
+print (constant.cli_slogan)
 
 while True:
-    str_cmd = raw_input('> ')
+    str_cmd = raw_input(constant.PS1)
 
     if str_cmd.strip().lower() == 'exit':
         break
 
     if str_cmd.strip().lower() == 'help':
-        print ("""
-        COMMAND    DESCRIPTION
-        ==============================
-        CREDITS    Show the sfaff
-        EXIT       Quit this programe
-        HELP       Display this page
-               """)
+        print (constant.cli_help)
         continue
 
     if str_cmd.strip().upper() == 'CREDITS':
-        print ("""
-        Hi there!
-               """)
+        print (constant.cli_credits)
         continue
 
     #if str_cmd == '':
@@ -45,7 +37,7 @@ while True:
             print (line.rstrip())
         pass
     except OSError:
-        print ('Invalid command')
+        print (constant.cli_incalid)
 
     pass
 
