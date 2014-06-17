@@ -12,6 +12,10 @@ print (constant.cli_slogan)
 while True:
     str_cmd = raw_input(constant.PS1)
 
+    if str_cmd.strip().upper() == 'CREDITS':
+        print (constant.cli_credits)
+        continue
+
     if str_cmd.strip().lower() == 'exit':
         break
 
@@ -19,8 +23,8 @@ while True:
         print (constant.cli_help)
         continue
 
-    if str_cmd.strip().upper() == 'CREDITS':
-        print (constant.cli_credits)
+    if str_cmd.strip().lower() == 'version':
+        print (constant.cli_version)
         continue
 
     #if str_cmd == '':
