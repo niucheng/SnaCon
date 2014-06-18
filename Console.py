@@ -5,26 +5,29 @@ import os
 import subprocess
 import sys
 
+import prog.Color as color
 import prog.Constant as constant
 
-print (constant.cli_slogan)
+color.check_env()
+color.puts(constant.cli_slogan)
 
 while True:
     str_cmd = raw_input(constant.PS1)
 
     if str_cmd.strip().upper() == 'CREDITS':
-        print (constant.cli_credits)
+        color.puts(constant.cli_credits)
         continue
 
     if str_cmd.strip().lower() == 'exit':
+        color.puts(constant.cli_farewell)
         break
 
     if str_cmd.strip().lower() == 'help':
-        print (constant.cli_help)
+        color.puts(constant.cli_help)
         continue
 
     if str_cmd.strip().lower() == 'version':
-        print (constant.cli_version)
+        color.puts(constant.cli_version)
         continue
 
     #if str_cmd == '':
@@ -38,10 +41,10 @@ while True:
                                 universal_newlines=True)
         out, err = proc.communicate()
         for line in out.splitlines():
-            print (line.rstrip())
+            color.puts(line.rstrip())
         pass
     except OSError:
-        print (constant.cli_incalid)
+        color.puts(constant.cli_invalid)
 
     pass
 

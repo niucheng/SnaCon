@@ -1,7 +1,7 @@
 SnaCon
 ======
 
-Snake Console (SnaCon, pronounced as [sneɪ'kən]), yet another termianl emulator implemented using python the snake.
+Snake Console (SnaCon, pronounced as [sneɪ'kən]), yet another terminal emulator implemented using python the snake.
 
 LICENSE
 =======
