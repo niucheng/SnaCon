@@ -8,7 +8,7 @@ cli_slogan = 'Type "%shelp%s", "%scredits%s" for more information.' % ('%(INFO)s
 PS1 = '> '
 
 # Version
-cli_version_short = '0.1.20140617.1'
+cli_version_short = '0.1.20140618.1'
 
 # Help info
 cli_help = """        COMMAND     DESCRIPTION

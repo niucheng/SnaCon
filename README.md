@@ -3,6 +3,16 @@ SnaCon
 
 Snake Console (SnaCon, pronounced as [sneɪ'kən]), yet another terminal emulator implemented using python the snake.
 
+Usage
+=====
+
+    $ python Console.py
+    Type "help", "credits" for more information.
+    > credits
+    Snake Console (SnaCon)
+    Hi there!
+    Yet another terminal emulator implemented using python the snake.
+
 LICENSE
 =======
 
