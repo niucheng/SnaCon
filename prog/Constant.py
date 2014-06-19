@@ -26,7 +26,7 @@ cli_version = '%sSnaCon%s  Ver ' % ('%(INFO)s', '%(NORMAL)s') + cli_version_shor
 cli_invalid = '%sInvalid command%s' % ('%(ERROR)s', '%(NORMAL)s')
 
 # Farewell
-cli_farewell = '%sBye%s' % ('%(WARN)s', '%(NORMAL)s')
+cli_farewell = '%sHave a lot of fun! %sBye%s' % ('%(INFO)s', '%(WARN)s', '%(NORMAL)s')
 
 # Terminal
 terminal_name = 'xterm'
