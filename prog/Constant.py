@@ -29,22 +29,25 @@ cli_invalid = '%sInvalid command%s' % ('%(ERROR)s', '%(NORMAL)s')
 cli_farewell = '%sHave a lot of fun! %sBye%s' % ('%(INFO)s', '%(WARN)s', '%(NORMAL)s')
 
 # Terminal
-terminal_name = 'xterm'
+terminal_name_prefix = 'xterm'
 
 # Terminal color
 terminal_color_key_info = 'INFO'
 terminal_color_key_warn = 'WARN'
 terminal_color_key_error = 'ERROR'
 terminal_color_key_normal = 'NORMAL'
+terminal_color_key_success = 'SUCCESS'
 #
 terminal_color_set = {
-    terminal_color_key_info   :  '\033[0;36m',
-    terminal_color_key_warn   :  '\033[0;33m',
-    terminal_color_key_error  :  '\033[0;31m',
-    terminal_color_key_normal :  '\x1B[0m'}
+    terminal_color_key_info    :  '\033[0;36m',
+    terminal_color_key_warn    :  '\033[0;33m',
+    terminal_color_key_error   :  '\033[0;31m',
+    terminal_color_key_normal  :  '\x1B[0m',
+    terminal_color_key_success :  '\x1B[1;36m'}
 terminal_none_color_set = {
-    terminal_color_key_info   :  '',
-    terminal_color_key_warn   :  '',
-    terminal_color_key_error  :  '',
-    terminal_color_key_normal :  ''}
+    terminal_color_key_info    :  '',
+    terminal_color_key_warn    :  '',
+    terminal_color_key_error   :  '',
+    terminal_color_key_normal  :  '',
+    terminal_color_key_success :  ''}
 

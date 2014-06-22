@@ -10,7 +10,7 @@ terminal_color_en = False
 def check_env():
     global terminal_color_en
     #
-    if os.environ.get('TERM')[:len(constant.terminal_name)] == constant.terminal_name:
+    if os.environ.get('TERM')[:len(constant.terminal_name_prefix)] == constant.terminal_name_prefix:
         terminal_color_en = True
 
 def puts(string):
@@ -23,5 +23,5 @@ if __name__ == "__main__":
     puts('Before %scheck_env()%s (%s)' % ('%(INFO)s', '%(NORMAL)s', 'True' if terminal_color_en else 'False'))
     check_env()
     puts('After %scheck_env()%s (%s)' % ('%(INFO)s', '%(NORMAL)s', 'True' if terminal_color_en else 'False'))
-    puts('[%sINFO%s][%sWARN%s][%sERROR%s][NORMAL]' % ('%(INFO)s', '%(NORMAL)s', '%(WARN)s', '%(NORMAL)s', '%(ERROR)s', '%(NORMAL)s'))
+    puts('[%sINFO%s][%sWARN%s][%sERROR%s][NORMAL][%sSUCCESS%s]' % ('%(INFO)s', '%(NORMAL)s', '%(WARN)s', '%(NORMAL)s', '%(ERROR)s', '%(NORMAL)s', '%(SUCCESS)s', '%(NORMAL)s'))
 
